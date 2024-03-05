@@ -1,6 +1,8 @@
 body {
   font-family: "Poppins", sans-serif;
-  font-weight: 400; /* Regular stil */
+
+  color: #000000;
+  /* Regular stil */
 }
 /* logo and Nav bar */
 
@@ -19,6 +21,7 @@ body {
   font-size: 30px;
   line-height: 40px;
   letter-spacing: 1%;
+  text-transform: uppercase;
 }
 
 .navbar {
@@ -34,4 +37,64 @@ body {
   background-color: black;
   color: white;
   padding: 10px 20px;
+}
+/* Navigation bar  end*/
+
+.firsth-wrapper {
+  background-color: #f4f6f5;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding-right: 5em;
+  padding-left: 5em;
+  border-radius: 10px;
+}
+
+.text-wrapper h1 {
+  font-size: 20px;
+  font-weight: 100px;
+  text-align: left;
+  margin: 10;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.text-wrapper p {
+  font-size: 15px;
+  font-weight: 100;
+  text-align: left;
+  margin: 10;
+  padding: 5;
+  margin-left: 10px;
+}
+.btn {
+  background-color: black;
+  display: flex;
+  margin-top: 20px;
+  color: #ffffff;
+  width: 100px;
+  height: 35px;
+  margin-left: 100px;
+}
+.pink {
+  float: right;
+}
+/* brand section*/
+.brand {
+  background-color: #ebd96b;
+  width: 1200px;
+  height: 120px;
+  width: 100%;
+}
+.brand-container {
+  border: #000000;
+}
+.brand img {
+  width: 10%;
+  height: auto;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
 }
