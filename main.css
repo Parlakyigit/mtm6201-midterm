@@ -43,6 +43,7 @@ body {
 .firsth-wrapper {
   background-color: #f4f6f5;
   width: 100%;
+  height: 400px;
   max-width: 1200px;
   margin: auto;
   display: flex;
@@ -79,7 +80,9 @@ body {
   margin-left: 100px;
 }
 .pink {
-  float: right;
+    position: absolute;
+    right; 10px;
+    width: 400px;
 }
 /* brand section*/
 .brand {
@@ -97,4 +100,82 @@ body {
   align-items: center;
   padding: 10px;
   margin: 5px;
+}
+/* brand section end*/
+
+/* New arrivals*/
+.new-arrivals {
+    padding: 20px;
+    background-color: red;
+}
+
+.new-arrivals h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: left;
+    
+}
+
+.image-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Resimler arasındaki boşluk */
+}
+
+.image-grid img {
+    width: calc(30% - 20px); /* Resimlerin genişliği (%30), aralarındaki boşluk (-20px) */
+    height: auto;
+    border-radius:3%;
+}
+/* New arrivals text*/
+
+.item-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* Kenarlığın içeri doğru genişlemesini sağlar */
+}
+
+.item-description h3 {
+    margin: 0;
+    color: gray;
+}
+
+.item-description .explore-now {
+    color: gray;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline-block; /* Bağlantının yanına ok işaretini ekleyebilmek için */
+    margin-left: 10px; /* Metin ve ok işareti arasında boşluk bırakır */
+}
+
+.item-description .explore-now::after {
+    content: '\2192'; /* Ok işareti unicode karakteri */
+}
+
+
+.item-description {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.item-description h3 {
+    margin: 0;
+}
+
+.explore-now {
+    color: gray;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
 }
