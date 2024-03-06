@@ -92,7 +92,13 @@ body {
   width: 100%;
 }
 .brand-container {
-  border: #000000;
+display: flex;
+justify-content: space-around;  
+}
+.brand-container img {
+    max-width: 100px; /* Resimlerin maksimum genişliği */
+    height: auto; /* Orantılı olarak yükseklik ayarlanır */
+    margin: 0 10px; /* Sol ve sağında 10 piksel boşluk bırakır */
 }
 .brand img {
   width: 10%;
@@ -107,6 +113,7 @@ body {
 .new-arrivals {
     padding: 20px;
     background-color: red;
+    height: 400px;
 }
 
 .new-arrivals h2 {
@@ -129,7 +136,7 @@ body {
     height: auto;
     border-radius:3%;
 }
-/* New arrivals text*/
+/* Item description*/
 
 .item-description {
     position: absolute;
@@ -140,42 +147,36 @@ body {
     box-sizing: border-box; /* Kenarlığın içeri doğru genişlemesini sağlar */
 }
 
-.item-description h3 {
-    margin: 0;
-    color: gray;
-}
-
-.item-description .explore-now {
-    color: gray;
-    font-weight: bold;
-    text-decoration: underline;
-    cursor: pointer;
-    display: inline-block; /* Bağlantının yanına ok işaretini ekleyebilmek için */
-    margin-left: 10px; /* Metin ve ok işareti arasında boşluk bırakır */
-}
-
 .item-description .explore-now::after {
     content: '\2192'; /* Ok işareti unicode karakteri */
 }
+/* pay section */
+.container1 {
+  max-width: 1200px;
+  margin: 50px auto;
+  background-color: yellow; /* Sarı arka plan */
+  padding: 20px;
 
-
-.item-description {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    background-color: black;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
 }
 
-.item-description h3 {
-    margin: 0;
+.content {
+  display: flex;
+  align-items: center; /* Öğeleri dikey olarak hizalama */
 }
 
-.explore-now {
-    color: gray;
-    font-weight: bold;
-    text-decoration: underline;
-    cursor: pointer;
+.image {
+  width: 50%; /* Resmin genişliği */
+  margin-right: 20px; /* Sağ tarafta boşluk bırakmak için */
+}
+
+.text2 {
+  width: 50%; /* Yazı kutusunun genişliği */
+}
+
+.text2 h2 {
+  color: black; /* Başlık metni rengi */
+}
+
+.text2 p {
+  color: black; /* Paragraf metni rengi */
 }
