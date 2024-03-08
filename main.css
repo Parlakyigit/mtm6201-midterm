@@ -62,8 +62,6 @@ body {
   width: 100%;
   height: 400px;
   max-width: 1200px;
-
-  background-color: aqua;
 }
 
 .text-banner {
@@ -112,7 +110,6 @@ body {
   height: auto;
   margin-top: 10px; /* Yukarıdan boşluk */
   margin-bottom: 20px;
-  background-color: #e5c643;
 }
 
 /* brand section*/
@@ -144,7 +141,6 @@ body {
 /* New arrivals*/
 .new-arrivals {
   padding: 20px;
-  background-color: red;
   height: 600px;
 }
 
@@ -201,7 +197,7 @@ body {
 .container1 {
   max-width: 1200px;
   margin: 50px auto;
-  background-color: #e5c643; /* Sarı arka plan */
+  background-color: #f4f6f5; /* bacground*/
   padding: 20px;
 }
 
@@ -267,63 +263,111 @@ body {
   align-items: left;
 }
 /* Last section App */
-.container-app {
-  display: flex;
-  justify-content: space-between;
-}
-
-.left-section {
-  width: 30%;
-}
-
-.bold {
-  font-weight: bold;
-}
-
-.images-app img {
-  width: 100%;
-}
-
-.right-section {
-  width: 65%;
-}
-
-.rectangle {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+.big-container {
+  width;1000px;
+  height: 200px;
+  border: none
   padding: 20px;
+  position: relative;
 }
 
-.rectangle img {
-  float: right;
+.square {
+  width: 50%;
+  height: 80%;
+  background-color: lightgreen;
+  float: left;
+  margin-right: 20px;
+  align-items: center;
 }
 
-.search-box {
-  width: 100%;
-  height: 50px;
-  border: 1px solid #000;
-}
-
-.small-boxes {
-  display: flex;
-}
-
-.box {
-  width: 33.33%;
+.text {
+  font-size: 16px;
   text-align: center;
 }
 
-.prices {
+.images-app {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
+  justify-content: space-between;
+  width: 80%;
 }
 
-.price {
-  width: 50%;
+.images-app img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
-.icons {
-  display: flex;
+.right-box {
+  width: 20%;
+  min-height: 600px; /* Dikdörtgenin boyunu buradan ayarlayabilirsiniz */
+  border: 1px solid #c2c8da;
+  border-radius: 10px;
+  padding: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  float: right;
+  margin-left: auto;
+  margin-right: 60px;
 }
 
-.icon {
-  margin-right: 10px;
+.item img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto; /* Resimlerin boyutunu ayarlamak için */
+}
+.title {
+  font-weight: bold;
+}
+
+.search-bar {
+  grid-column: 1 / span 2;
+  position: relative;
+}
+
+.search-bar input {
+  padding-right: 10px;
+  border-radius: 10px;
+}
+
+.search-bar i {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+
+.trending-now {
+  grid-column: 1 / span 2;
+}
+
+.bottom-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.item {
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.item p {
+  margin: 5px 0;
+}
+
+.top-right-image {
+  position: absolute;
+  margin: 5px 2px 160px 100px;
 }
