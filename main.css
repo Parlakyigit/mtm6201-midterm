@@ -197,7 +197,11 @@ body {
 .container1 {
   max-width: 1200px;
   margin: 50px auto;
-  background-color: #f4f6f5; /* bacground*/
+  background-color:
+    height: 200px;
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #E0C340,#E6C945,#F9DD55, #F9DF56);
+  
   padding: 20px;
 }
 
