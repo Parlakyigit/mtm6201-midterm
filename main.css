@@ -6,30 +6,31 @@ body {
 }
 /* logo and Nav bar */
 
-.container1 {
-  padding: 20px;
+.container-both {
   display: flex;
-  align-items: center; /* alignment */
+  
 }
 
-.logo {
-  width: 100px;
+.logo {transform: scale(0.6); 
+  margin-bottom: 10px;
+  
+  
 }
 
 .fashion-text {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 30px;
   line-height: 40px;
   letter-spacing: 1%;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .navbar {
-  display: inline-flex;
-  margin-left: auto; /* Navigation bar */
-  background-color: #e0c340;
-
   text-transform: uppercase;
+  margin-bottom:30px;
+  margin-right:20px ;
+  
 }
 
 .navbar span {
@@ -59,8 +60,8 @@ body {
   padding-right: 5em;
   padding-left: 5em;
   border-radius: 10px;
-  width: 100%;
-  height: 400px;
+  width: 120%;
+  height: 600px;
   max-width: 1200px;
 }
 
@@ -70,7 +71,7 @@ body {
 }
 
 .text-banner h1 {
-  font-size: 40px;
+  font-size: 70px;
   font-weight: bold;
   text-align: left;
   margin: 5px 10px 10px 5px;
@@ -103,6 +104,8 @@ body {
 .banner-image {
   flex: 1;
   text-align: right;
+  width: 80%;
+  
 }
 
 .banner-image img {
@@ -118,6 +121,9 @@ body {
   width: 1200px;
   height: 120px;
   width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
 }
 .brand-container {
   display: flex;
@@ -141,7 +147,8 @@ body {
 /* New arrivals*/
 .new-arrivals {
   padding: 20px;
-  height: 600px;
+  height: 400px;
+  
 }
 
 .new-arrivals h2 {
@@ -157,51 +164,50 @@ body {
 }
 
 .image-item {
-  width: calc(33.33% - 20px);
-  height: 100px;
+  width: calc(30.33% - 10px);
+  height: 200px;
   margin-right: 10px;
-  text-align: center;
+  text-align: left;
+  
 }
 
 .image-item:last-child {
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 .image-item img {
   max-width: 100%;
+  
 }
 
 .image-caption {
   margin-top: 10px;
+
 }
 
 .image-caption h3 {
   margin: 0;
   font-size: 18px;
 }
-/* Item description
+.image-item p { color:#7f7f7f; /* Explore Now yazısının rengi */
+  }
 
-.item-description {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box; /* Kenarlığın içeri doğru genişlemesini sağlar */
-/*
+ .p::after {
+  content: "\2192"; }/* Ok işareti unicode karakteri */
 
-.item-description .explore-now::after {
-  content: "\2192"; /* Ok işareti unicode karakteri */
+
+
+.image-caption p::after {
+  content: "\2192"; }/* Ok işareti unicode karakteri */
+  
 
 /* payday section */
 .container1 {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 50px auto;
   background-color:
     height: 200px;
-    background-color: red; /* For browsers that do not support gradients */
     background-image: linear-gradient(to right, #E0C340,#E6C945,#F9DD55, #F9DF56);
-  
   padding: 20px;
 }
 
@@ -217,22 +223,32 @@ body {
 }
 
 .text2 {
-  width: 50%; /* Yazı kutusunun genişliği */
+  width: 60%; /* Yazı kutusunun genişliği */
 }
 
-.text2 h2 {
+.text2 h1 {
   color: black; /* Başlık metni rengi */
+  font-weight: bold;
+  font-size: xx-large;
+  text-transform: uppercase;
 }
+.let {
+  background-image: url("images/Rectangle3.png");
+  background-size: contain; /* Resmi kelimenin boyutuna uyacak şekilde kapla */
+  background-repeat: no-repeat;
+}
+
 
 .text2 p {
   color: black; /* Paragraf metni rengi */
 }
+ 
 
 /* Young's favourite section */
 .young-favourite {
   padding: 20px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .image-grid {
@@ -243,7 +259,7 @@ body {
 .image-container {
   width: 45%; /* Resim konteynerinin genişliği */
   margin-top: 20px; /* Üstten boşluk */
-  margin-bottom: 20px; /* Altan boşluk */
+  margin-bottom: 5px; /* Altan boşluk */
 }
 
 .image-container img {
@@ -267,111 +283,57 @@ body {
   align-items: left;
 }
 /* Last section App */
-.big-container {
-  width;1000px;
-  height: 200px;
-  border: none
-  padding: 20px;
-  position: relative;
-}
-
-.square {
-  width: 50%;
-  height: 80%;
-  background-color: lightgreen;
-  float: left;
-  margin-right: 20px;
+.container-app {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  height: 100vh;
+  margin-top:none;
 }
 
-.text {
-  font-size: 16px;
-  text-align: center;
-}
-
-.images-app {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+.icon-div {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 80%;
 }
 
-.images-app img {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+.square {
+  width: 40%;
+  padding: 20px;
 }
 
-.right-box {
-  width: 20%;
-  min-height: 600px; /* Dikdörtgenin boyunu buradan ayarlayabilirsiniz */
-  border: 1px solid #c2c8da;
-  border-radius: 10px;
-  padding: 0px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  float: right;
-  margin-left: auto;
-  margin-right: 60px;
+.square h2 {
+  text-align: center;
 }
 
-.item img {
+.left-images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-images img {
+  width: 45%; /* Resimlerin genişliğini ayarlayın */
+}
+
+.square img {
   max-width: 100%;
-  max-height: 100%;
-  height: auto; /* Resimlerin boyutunu ayarlamak için */
-}
-.title {
-  font-weight: bold;
+  display: block;
+  margin: 0 auto; /* Resmi ortalamak için */
 }
 
-.search-bar {
-  grid-column: 1 / span 2;
-  position: relative;
+.square::after {
+  content: '';
+  display: block;
+  clear: both;
 }
 
-.search-bar input {
-  padding-right: 10px;
-  border-radius: 10px;
+.square {
+  float: left;
 }
 
-.search-bar i {
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-}
+.mobile-image {
+  width: 30%;
+  text-align: right;
 
-.trending-now {
-  grid-column: 1 / span 2;
-}
-
-.bottom-images {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.item {
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-.item img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.item p {
-  margin: 5px 0;
-}
-
-.top-right-image {
-  position: absolute;
-  margin: 5px 2px 160px 100px;
 }
