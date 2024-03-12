@@ -1,0 +1,189 @@
+/*header*/
+body {
+  font-family: "Poppins", sans-serif;
+
+  color: #000000;
+  /* Regular stil */
+}
+/* logo and Nav bar */
+
+.container-both {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  transform: scale(0.7);
+  margin-bottom: 10px;
+}
+
+.fashion-text {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 1%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.navigation {
+  display: flex;
+  margin-left: auto;
+}
+.navbar {
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.navbar span {
+  padding: 10px;
+}
+
+.contact {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+}
+/* Navigation bar  end*/
+
+main {
+  padding: 20px;
+}
+
+.contact,
+.info {
+  margin-bottom: 40px;
+}
+
+.contact form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.contact form button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.container-footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left-footer {
+  text-align: left;
+}
+
+.right-footer {
+  text-align: left;
+  display: flex; /* Yeni eklenen stil: sağ kutuyu yatay hizalamak için */
+}
+
+.menu {
+  margin-right: 20px; /* Yeni eklenen stil: menüler arasında boşluk */
+}
+
+.menu h2 {
+  margin-bottom: 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  margin-bottom: 10px;
+  text-align: left; /* Yeni eklenen stil: tüm liste öğelerini sola hizala */
+}
+
+.icons {
+  margin-top: 10px;
+  display: flex;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+/* Media query for tablet size */
+@media only screen and (max-width: 960px) {
+  /* Header */
+  .container-both {
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center-align items */
+  }
+
+  .logo {
+    transform: scale(0.5); /* Scale down the logo */
+    margin-bottom: 20px; /* Add some space below the logo */
+  }
+
+  .fashion-text {
+    font-size: 24px; /* Decrease the font size of fashion text */
+  }
+
+  .navigation {
+    margin-top: 20px; /* Move navigation to the top */
+    justify-content: center; /* Center-align the navigation */
+  }
+
+  .navbar {
+    flex-wrap: wrap; /* Wrap navigation items */
+    justify-content: center; /* Center-align navigation items */
+  }
+
+  .navbar span {
+    padding: 10px 20px; /* Increase padding around navigation items */
+  }
+
+  /* Main */
+  main {
+    padding: 10px; /* Decrease padding for main content */
+  }
+
+  /* Footer */
+  .container-footer {
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center-align items */
+  }
+
+  .right-footer {
+    margin-top: 20px; /* Move the right footer menu up */
+    justify-content: center; /* Center-align the right footer menu */
+  }
+
+  .menu {
+    margin-bottom: 20px; /* Add space between menu items */
+    text-align: center; /* Center-align the menu */
+  }
+
+  .icons {
+    flex-wrap: wrap; /* Wrap icons */
+    justify-content: center; /* Center-align icons */
+  }
+
+  .icon {
+    margin-right: 20px; /* Add space between icons */
+  }
+}
+/* Media query for phone size */
+@media only screen and (max-width: 400px); /* Header */

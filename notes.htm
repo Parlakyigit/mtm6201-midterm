@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container-both">
+        <img src="images/logo.png" alt="Fashion Logo" class="logo" />
+        <span class="fashion-text">fashion</span>
+        <div class="navigation">
+          <nav class="navbar">
+            <span class="about">about</span>
+            <span class="support">support</span>
+            <span class="careers">careers</span>
+            <span class="contact">contact</span>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="contact">
+        <h2>Get in Touch</h2>
+        <form action="submit.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </section>
+      <section class="info">
+        <h2>Our Information</h2>
+        <p>Email: fashion@gmail.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Address: 123 Fashion Street, City, Country</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container-footer">
+        <div class="left-footer">
+          <h1>Fashion</h1>
+          <p>Complete your style with awesome clothes from us</p>
+          <!-- İcon images-->
+          <div class="icons">
+            <img src="images/Group 10.png" alt="facebook Icon " class="icon" />
+            <img src="images/Group 11.png" alt="Icon 2" class="icon" />
+            <img src="images/Group 12.png" alt="Icon 3" class="icon" />
+            <img src="images/Group 13.png" alt="Icon 4" class="icon" />
+          </div>
+        </div>
+        <div class="right-footer">
+          <div class="menu">
+            <h2>Company</h2>
+            <ul>
+              <li>About</li>
+              <li>Contact</li>
+              <li>Support</li>
+              <li>Careers</li>
+            </ul>
+          </div>
+          <div class="menu">
+            <h2>Quick Links</h2>
+            <ul>
+              <li>Share Location</li>
+              <li>Orders Tracking</li>
+              <li>Size Guide</li>
+              <li>IFADS</li>
+            </ul>
+          </div>
+          <div class="menu">
+            <h2>Legal</h2>
+            <ul>
+              <li>Terms & Conditions</li>
+              <li>Privacy Policy</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
