@@ -1,7 +1,6 @@
 /*header*/
 body {
   font-family: "Poppins", sans-serif;
-
   color: #000000;
   /* Regular stil */
 }
@@ -92,11 +91,11 @@ main {
 
 .right-footer {
   text-align: left;
-  display: flex; /* Yeni eklenen stil: sağ kutuyu yatay hizalamak için */
+  display: flex; /* to align the right box horizontally */
 }
 
 .menu {
-  margin-right: 20px; /* Yeni eklenen stil: menüler arasında boşluk */
+  margin-right: 20px;
 }
 
 .menu h2 {
@@ -111,7 +110,7 @@ main {
 
 .menu ul li {
   margin-bottom: 10px;
-  text-align: left; /* Yeni eklenen stil: tüm liste öğelerini sola hizala */
+  text-align: left; /* Align list itemt to the left */
 }
 
 .icons {

@@ -84,7 +84,7 @@ body {
 }
 .let {
   background-image: url("images/Rectangle3.png");
-  background-size: contain; /* Resmi kelimenin boyutuna uyacak şekilde kapla */
+  background-size: contain; /* Cover the image according to the size of the word */
   background-repeat: no-repeat;
 }
 .unique {
@@ -116,10 +116,39 @@ body {
 .banner-image img {
   width: 600px;
   height: auto;
-  margin-top: 10px; /* Yukarıdan boşluk */
+  margin-top: 10px; 
   margin-bottom: 20px;
 }
+.star-div {
+  position: relative;
+} 
 
+.top-star1 {
+  position: absolute;
+  top: 1%;
+  margin-left: 30%;
+  align-items:right;
+}
+
+.top-star2 {
+  position: absolute;
+  top: 2%;
+  left: 300px;
+}
+
+.bottom-star1 {
+  position: absolute;
+  bottom: 2px;
+  right: 30px;
+}
+
+.bottom-star2 {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+}
+
+/*Let's Explore Section End*/
 /* brand section*/
 .brand {
   background-color: #ebd96b;
@@ -135,9 +164,9 @@ body {
   justify-content: space-around;
 }
 .brand-container img {
-  max-width: 100px; /* Resimlerin maksimum genişliği */
-  height: auto; /* Orantılı olarak yükseklik ayarlanır */
-  margin: 0 10px; /* Sol ve sağında 10 piksel boşluk bırakır */
+  max-width: 100px; /*  maximum width of images */
+  height: auto; /* Height is adjusted proportionally */
+  margin: 0 10px; /* margin top and bottom 0px, margin left and right are 10px */
 }
 .brand img {
   width: 10%;
@@ -194,16 +223,16 @@ body {
   margin: 0;
   font-size: 18px;
 }
-.image-item p { color:#7f7f7f; /* Explore Now yazısının rengi */
+.image-item p { color:#66666; /* Explore Now color */
   }
 
  .p::after {
-  content: "\2192"; }/* Ok işareti unicode karakteri */
+  content: "\2192"; }/* arrow sign */
 
 
 
 .image-caption p::after {
-  content: "\2192"; }/* Ok işareti unicode karakteri */
+  content: "\2192"; }/* arrow sign */
   
 
 /* payday section */
@@ -217,28 +246,28 @@ body {
 }
 .content {
   display: flex;
-  align-items: center; /* Öğeleri dikey olarak hizalama */
+  align-items: center;
 }
 
 .image {
-  width: 50%; /* Resmin genişliği */
+  width: 50%; /* width of image */
   height: 50%;
   margin: 10px; /* Sağ tarafta boşluk bırakmak için */
 }
 
 .text2 {
-  width: 60%; /* Yazı kutusunun genişliği */
+  width: 60%; 
 }
 
 .text2 h1 {
-  color: black; /* Başlık metni rengi */
+  color: black;/*h1 color*/
   font-weight: bold;
   font-size: xx-large;
   text-transform: uppercase;
 }
 .let {
   background-image: url("images/Rectangle3.png");
-  background-size: contain; /* Resmi kelimenin boyutuna uyacak şekilde kapla */
+  background-size: contain; /* Cover the image according to the size of the word */ 
   background-repeat: no-repeat;
 }
 
@@ -253,7 +282,6 @@ body {
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 5px;
-  background-color: #ebd96b;
 }
 
 .image-grid {
@@ -284,13 +312,11 @@ body {
 }
 
 .caption p {
-  color: #7f7f7f; /* Explore Now yazısının rengi */
-  align-items: left;
+  color: #66666; /* Explore Now yazısının rengi */
 }
-/* Last section App */
+/*  App section*/
 .container-app {
   position: relative; 
-  
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -343,11 +369,13 @@ body {
   width: 30%;
   text-align: right;
   position: relative;
+  margin-left: 20%;
+  
 }
 
 .svg-circle {
   position: absolute; /* Mutlak konumlandırma */
-  right: -50px; /* Mobil resmin sağında 50 piksel boşluk bırakır */
+  right: -20px; /* Mobil resmin sağında 50 piksel boşluk bırakır */
   top: 50%; /* Mobil resmin yüksekliğinin yarısı kadar yukarıda */
   transform: translateY(-50%); /* Dikey hizalamayı düzeltir */
 }
