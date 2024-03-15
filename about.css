@@ -67,6 +67,55 @@ main {
 .team p {
   color: black;
 }
+/* Rectangle Styles */
+.rectangle {
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  text-align: center;
+  line-height: 100px;
+  animation: warning 1s infinite alternate;
+}
+
+/* Animation Styles */
+/* Keyframes for the warning animation */
+@keyframes warning {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Apply the animation to the doomsday button */
+
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-25px);
+  }
+  50% {
+    transform: translateX(60px);
+  }
+  100% {
+    transform: translateX(-25px);
+  }
+}
+.rectangle {
+  cursor: pointer;
+  transition: background-image 0.3s ease;
+}
+.rectangle:hover {
+  animation: shake 0.5s infinite alternate; /* Apply shake animation */
+}
+
 /* footer section*/
 
 .container-footer {
