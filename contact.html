@@ -11,11 +11,20 @@
     />
   </head>
   <body>
-    <header>
-      <div class="container-both">
-        <img src="images/logo.png" alt="Fashion Logo" class="logo" />
-        <span class="fashion-text">fashion</span>
-        <div class="navigation">
+    <header role="banner">
+      <div
+        class="container-both"
+        itemscope
+        itemtype="https://schema.org/Organization"
+      >
+        <img
+          src="images/logo.png"
+          alt="Fashion Logo"
+          class="logo"
+          itemprop="logo"
+        />
+        <span class="fashion-text" itemprop="name">fashion</span>
+        <div class="navigation" role="navigation">
           <nav class="navbar">
             <span class="about"><a href="about.html"> About</a></span>
             <span class="support">Support</span>
@@ -26,41 +35,103 @@
       </div>
     </header>
     <main>
-      <section class="contact">
+      <section
+        class="contact"
+        role="form"
+        itemscope
+        itemtype="https://schema.org/ContactPage"
+      >
         <h2>Get in Touch</h2>
-        <form action="submit.php" method="post">
+        <form action="submit.php" method="post" itemprop="contactForm">
           <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            aria-required="true"
+          />
           <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            aria-required="true"
+          />
           <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
+          <textarea
+            id="message"
+            name="message"
+            required
+            aria-required="true"
+          ></textarea>
           <button type="submit">Send</button>
         </form>
       </section>
-      <section class="info">
+      <section
+        class="info"
+        role="region"
+        aria-label="Our Information"
+        itemscope
+        itemtype="https://schema.org/Organization"
+      >
         <h2>Our Information</h2>
-        <p>Email: fashion@gmail.com</p>
-        <p>Phone: +123 456 7890</p>
-        <p>Address: 123 Fashion Street, City, Country</p>
+        <p>Email: <span itemprop="email">fashion@gmail.com</span></p>
+        <p>Phone: <span itemprop="telephone">+123 456 7890</span></p>
+        <p>
+          Address:
+          <span
+            itemprop="address"
+            itemscope
+            itemtype="https://schema.org/PostalAddress"
+            ><span itemprop="streetAddress">123 Fashion Street</span>,
+            <span itemprop="addressLocality">City</span>,
+            <span itemprop="addressCountry">Country</span></span
+          >
+        </p>
       </section>
     </main>
 
-    <footer>
+    <footer role="contentinfo">
       <div class="container-footer">
         <div class="left-footer">
           <h1>Fashion</h1>
           <p>Complete your style with awesome clothes from us</p>
-          <!-- İcon images-->
-          <div class="icons">
-            <img src="images/Group-10.png" alt="facebook Icon " class="icon" />
-            <img src="images/Group-11.png" alt="Icon 2" class="icon" />
-            <img src="images/Group-12.png" alt="Icon 3" class="icon" />
-            <img src="images/Group-13.png" alt="Icon 4" class="icon" />
+          <!-- Icon images-->
+          <div
+            class="icons"
+            itemscope
+            itemtype="https://schema.org/SocialMediaPosting"
+          >
+            <img
+              src="images/Group-10.png"
+              alt="facebook Icon "
+              class="icon"
+              itemprop="image"
+            />
+            <img
+              src="images/Group-11.png"
+              alt="Icon 2"
+              class="icon"
+              itemprop="image"
+            />
+            <img
+              src="images/Group-12.png"
+              alt="Icon 3"
+              class="icon"
+              itemprop="image"
+            />
+            <img
+              src="images/Group-13.png"
+              alt="Icon 4"
+              class="icon"
+              itemprop="image"
+            />
           </div>
         </div>
         <div class="right-footer">
-          <div class="menu">
+          <div class="menu" role="navigation">
             <h2>Company</h2>
             <ul>
               <li>About</li>
@@ -69,22 +140,7 @@
               <li>Careers</li>
             </ul>
           </div>
-          <div class="menu">
-            <h2>Quick Links</h2>
-            <ul>
-              <li>Share Location</li>
-              <li>Orders Tracking</li>
-              <li>Size Guide</li>
-              <li>IFADS</li>
-            </ul>
-          </div>
-          <div class="menu">
-            <h2>Legal</h2>
-            <ul>
-              <li>Terms & Conditions</li>
-              <li>Privacy Policy</li>
-            </ul>
-          </div>
+          <div class="menu" role="navigation"></div>
         </div>
       </div>
     </footer>
