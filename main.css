@@ -389,13 +389,13 @@ body {
 
   
    .box-join h2{
-    color:white;
+    color:black;
     margin-bottom: 20px;
     text-transform: uppercase;
     text-align: center;
   }
   .box-join p{
-    color: white;
+    color: black;
     text-align: center;
   }
   .box-join form {

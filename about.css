@@ -71,7 +71,7 @@ main {
 .rectangle {
   width: 200px;
   height: 100px;
-  background-color: red;
+  background-color: #e5c643;
   text-align: center;
   line-height: 100px;
   animation: warning 1s infinite alternate;
@@ -92,7 +92,6 @@ main {
 }
 
 /* Apply the animation to the doomsday button */
-
 
 @keyframes shake {
   0% {
@@ -199,24 +198,29 @@ main {
   main {
     padding: 10px; /* Reduce padding  */
   }
-
-  /* Footer */
-  .container-footer {
-    flex-direction: column; /* Align footer items vertically */
-    align-items: center; /* Center align footer content */
+  .rectangle {
+    width: 150px; /*  width  */
+    height: 75px;
+    line-height: 75px; /*  line-height for vertical centering */
+    font-size: 14px;
   }
+}
+/* Footer */
+.container-footer {
+  flex-direction: column; /* Align footer items vertically */
+  align-items: center; /* Center align footer content */
+}
 
-  .menu {
-    margin-right: 0; /* Remove margin between menu items */
-    margin-bottom: 20px;
-    text-align: center; /* Center align menu content */
-  }
+.menu {
+  margin-right: 0; /* Remove margin between menu items */
+  margin-bottom: 20px;
+  text-align: center; /* Center align menu content */
+}
 
-  .menu ul li {
-    text-align: center; /* Center align list items */
-  }
+.menu ul li {
+  text-align: center; /* Center align list items */
+}
 
-  .icons {
-    margin-top: 20px; /*  top margin between icons */
-  }
+.icons {
+  margin-top: 20px; /*  top margin between icons */
 }
