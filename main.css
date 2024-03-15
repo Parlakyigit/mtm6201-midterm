@@ -247,7 +247,7 @@ body {
 .image {
   width: 50%; /* width of image */
   height: 50%;
-  margin: 10px; /* Sağ tarafta boşluk bırakmak için */
+  margin: 10px; 
 }
 
 .text2 {
@@ -268,7 +268,7 @@ body {
 
 
 .text2 p {
-  color: black; /* Paragraf metni rengi */
+  color: black; 
 }
  
 
@@ -285,14 +285,14 @@ body {
 }
 
 .image-container {
-  width: 45%; /* Resim konteynerinin genişliği */
-  margin-top: 20px; /* Üstten boşluk */
-  margin-bottom: 5px; /* Altan boşluk */
+  width: 45%; 
+  margin-top: 20px; 
+  margin-bottom: 5px; 
 }
 
 .image-container img {
-  width: 100%; /* Resimlerin genişliği */
-  height: auto; /* Resimlerin orijinal boyut oranını koru */
+  width: 100%; 
+  height: auto; 
 }
 
 .caption {
@@ -303,11 +303,11 @@ body {
   font: size 100px;
 }
 .caption h3 {
-  margin-bottom: 0%; /* Trending ve All Under başlıkları arasında boşluk */
+  margin-bottom: 0%; 
 }
 
 .caption p {
-  color: #666; /* Explore Now yazısının rengi */
+  color: #666; /* Explore color */
 }
 /*  App section*/
 .container-app {
@@ -341,13 +341,13 @@ body {
 }
 
 .left-images img {
-  width: 45%; /* Resimlerin genişliğini ayarlayın */
+  width: 45%; 
 }
 
 .square img {
   max-width: 100%;
   display: block;
-  margin: 0 auto; /* Resmi ortalamak için */
+  margin: 0 auto; 
 }
 
 .square::after {
@@ -438,11 +438,11 @@ body {
 
   .right-footer {
     text-align: left;
-    display: flex; /* Yeni eklenen stil: sağ kutuyu yatay hizalamak için */
+    display: flex; 
   }
 
   .menu {
-    margin-right: 20px; /* Yeni eklenen stil: menüler arasında boşluk */
+    margin-right: 20px; 
   }
 
   .menu h2 h1{
@@ -457,7 +457,7 @@ body {
 
   .menu ul li {
     margin-bottom: 10px;
-    text-align: left; /* Yeni eklenen stil: tüm liste öğelerini sola hizala */
+    text-align: left; 
   }
 
   .icons {
@@ -471,3 +471,218 @@ body {
     margin-right: 10px;
   }
   
+  
+/* CSS for tablet screen (960px) */
+@media only screen and (max-width: 960px) {
+  /* Logo and Nav bar */
+  .container-both {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    transform: scale(0.5); /* Adjust logo size */
+    margin-bottom: 20px; /* Increase margin */
+  }
+
+  .fashion-text {
+    font-size: 24px; /* Decrease font size */
+  }
+
+  .navigation {
+    margin: 20px 0; /* Increase margin */
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar span {
+    padding: 10px 0; /* Adjust padding */
+  }
+  /* Let's Explore Section */
+  .content-banner {
+    flex-direction: column;
+    padding: 20px 5%; /* Adjust padding */
+    height: auto; /* Adjust height */
+  }
+
+  .text-banner {
+    width: 100%;
+    text-align: center; /* Center align text */
+  }
+
+  .text-banner h2 {
+    font-size: 36px; /* Decrease font size */
+  }
+
+  .banner-image {
+    text-align: center; /* Center align image */
+    margin-top: 50px; /* Increase margin */
+  }
+
+  .banner-image img {
+    width: 80%; /* Adjust image width */
+    margin-top: 0; /* Remove margin */
+  }
+
+  .star-div {
+    display: none; /* Hide star div */
+  }
+/* Brand section */
+.brand {
+  height: auto; /* Adjust height */
+  margin-top: 5%; /* Adjust margin */
+  margin-bottom: 5%; /* Adjust margin */
+}
+
+.brand-container {
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: center; /* Center align items */
+}
+
+.brand-container img {
+  max-width: 80px; /* Adjust maximum width of images */
+  height: auto; /* Height is adjusted proportionally */
+  margin: 10px; /* Adjust margin */
+}
+/* New Arrivals section */
+.new-arrivals {
+  height: auto; /* Adjust height */
+}
+
+.image-containers {
+  flex-direction: column; /* Stack items vertically */
+}
+
+.image-item {
+  width: 100%; /* Adjust width */
+  margin-right: 0; /* Remove margin */
+  margin-bottom: 20px; /* Add bottom margin */
+}
+/* Payday section */
+.container1 {
+  max-width: 720px; /* Adjusted max-width for 960px screen */
+  margin: 50px auto;
+  background-color: transparent;
+  height: auto;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* Adjusted flex direction */
+  align-items: center;
+}
+
+.image {
+  width: 100%; /* Adjusted width for image */
+  height: auto;
+  margin: 10px;
+}
+
+.text2 {
+  width: 100%; /* Adjusted width for text container */
+}
+
+.text2 h2 {
+  font-size: 24px; /* Adjusted font size for h2 */
+}
+
+.text2 p {
+  font-size: 14px; /* Adjusted font size for p */
+}
+
+.let {
+  background-image: url("images/Rectangle3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Young's Favourite section */
+.young-favourite {
+  height: auto; /* Adjust height */
+}
+
+.image-grid {
+  flex-direction: column; /* Stack items vertically */
+}
+
+.image-container {
+  width: 100%; /* Adjust width */
+  margin-top: 20px; /* Add top margin */
+  margin-bottom: 20px; /* Add bottom margin */
+}
+/* App section */
+.container-app {
+  height: auto; /* Adjust height */
+}
+.icon-div {
+  flex-direction: column; /* Stack items vertically */
+  align-items: left; /* Center align items */
+  margin-left: 0; 
+}
+
+.square {
+  width: 20%; /* Adjust width */
+}
+
+.left-images {
+  flex-direction: column; /* Stack items vertically */
+}
+
+.left-images img {
+  width: 100%; /* Adjust image width */
+  margin-bottom: 20px; /* Add bottom margin */
+}
+
+.mobile-image {
+  width: 50%; /* Adjust width */
+  margin-left: 0; /* Remove margin */
+  margin-top: 20px; /* Add top margin */
+}
+
+.svg-circle {
+  display: none; /* Hide SVG circle */
+}
+/* Join section */
+.container-join {
+  height: auto; /* Adjust height */
+}
+
+.box-join form {
+  flex-direction: column; /* Stack items vertically */
+  margin-bottom: 2px;
+}
+
+.box-join input[type="email"] {
+  width: 50%; /* Adjust width */
+  margin-bottom: 10px; /* Add bottom margin */
+}
+
+/* Footer section */
+.container-footer {
+  flex-direction: column;/* Stack items vertically */
+}
+
+.left-footer,
+.right-footer {
+  text-align: center; /* Center align text */
+}
+
+.menu {
+  margin: 20px 0; /* Adjust margin */
+}
+}
+
+
+
+
+
+
