@@ -1,0 +1,173 @@
+body {
+  font-family: "Poppins", sans-serif;
+  color: #000000;
+  /* Regular stil */
+}
+/* logo and Nav bar */
+
+.container-both {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  transform: scale(0.7);
+  margin-bottom: 10px;
+}
+
+.fashion-text {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 1%;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.navigation {
+  display: flex;
+  margin-left: auto;
+}
+.navbar {
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+
+.navbar span {
+  padding: 10px;
+}
+
+.About {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+}
+/* Navigation bar  end*/
+main {
+  padding: 20px;
+}
+
+.about,
+.mission,
+.team {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.about h2,
+.mission h2,
+.team h2 {
+  color: black;
+}
+
+.about p,
+.mission p,
+.team p {
+  color: black;
+}
+/* footer section*/
+
+.container-footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left-footer {
+  text-align: left;
+}
+
+.right-footer {
+  text-align: left;
+  display: flex; /* Yeni eklenen stil: sağ kutuyu yatay hizalamak için */
+}
+
+.menu {
+  margin-right: 20px; /* Yeni eklenen stil: menüler arasında boşluk */
+}
+
+.menu h2 {
+  margin-bottom: 10px;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu ul li {
+  margin-bottom: 10px;
+  text-align: left; /* Yeni eklenen stil: tüm liste öğelerini sola hizala */
+}
+
+.icons {
+  margin-top: 10px;
+  display: flex;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+/* Responsive Styles for Tablet (960px) */
+@media screen and (max-width: 960px) {
+  /* Logo and Nav bar */
+  .container-both {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    transform: scale(0.5); /* Reduce the size of the logo */
+  }
+
+  .fashion-text {
+    font-size: 20px;
+  }
+
+  .navigation {
+    margin-top: 20px; /*  top margin for the navigation menu */
+  }
+
+  .navbar {
+    flex-direction: column; /* Align menu items vertically */
+    align-items: center; /* Center align menu items */
+  }
+
+  .navbar span {
+    margin-bottom: 10px; /*  space between menu items */
+  }
+
+  /* Main content */
+  main {
+    padding: 10px; /* Reduce padding  */
+  }
+
+  /* Footer */
+  .container-footer {
+    flex-direction: column; /* Align footer items vertically */
+    align-items: center; /* Center align footer content */
+  }
+
+  .menu {
+    margin-right: 0; /* Remove margin between menu items */
+    margin-bottom: 20px;
+    text-align: center; /* Center align menu content */
+  }
+
+  .menu ul li {
+    text-align: center; /* Center align list items */
+  }
+
+  .icons {
+    margin-top: 20px; /*  top margin between icons */
+  }
+}
