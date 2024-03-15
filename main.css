@@ -120,27 +120,26 @@ body {
 
 .top-star1 {
   position: absolute;
-  top: 1%;
-  margin-left: 30%;
-  align-items:right;
+  margin-left: 50%;
+  left: 100px; ;
 }
 
 .top-star2 {
   position: absolute;
-  top: 2%;
-  left: 300px;
+  top: 12%;
+  left: 550px;
 }
 
 .bottom-star1 {
   position: absolute;
   bottom: 2px;
-  right: 30px;
+  left:400px ;
 }
 
 .bottom-star2 {
   position: absolute;
-  bottom: 20px;
-  left: 0;
+  bottom: 10px;
+  left: 100;
 }
 
 /*Let's Explore Section End*/
